@@ -16,8 +16,8 @@ public class Main {
         WebDriver driver = new ChromeDriver();
         driver.get("https://stepik.org/catalog?auth=login");
         TimeUnit.SECONDS.sleep(4);
-        driver.findElement(By.id("id_login_email")).sendKeys("watan.kh@gmail.com");
-        driver.findElement(By.id("id_login_password")).sendKeys("4QZ[-xkJi.TfHRZ");
+        driver.findElement(By.id("id_login_email")).sendKeys("username");
+        driver.findElement(By.id("id_login_password")).sendKeys("password");
         driver.findElement(By.id("login_form")).submit();
         TimeUnit.SECONDS.sleep(2);
         System.out.println("started looking for learn");
